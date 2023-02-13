@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Bank</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-center mt-10 text-5xl ">Let's get some <span class="text-violet-700	">Moooooney</span>!!!!</h1>
+  </header>
+  <main>
+    <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-10">
+
+      <div class="bg-sky-300 pt-5 pb-5 pl-5 text-3xl rounded-md">
+        <h3 class="text-white">Deposit</h3>
+        <p class="text-white">$<span id="depositAmount">00</span></p>
+      </div>
+      
+      <div class="bg-amber-300 pt-5 pb-5 pl-5 text-3xl rounded-md">
+        <h3 class="text-white">Withdraw</h3>
+        <p class="text-white">$<span id="withdrawAmout">00</span></p>
+      </div>
+
+      <div class="bg-violet-300 pt-5 pb-5 pl-5 text-3xl rounded-md">
+        <h3 class="text-white">Balance</h3>
+        <p class="text-white">$<span id="balance">1200</span></p>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-10">
+      <div class="bg-green-300 pt-5 pb-5 pl-5 text-3xl rounded-md">
+        <h3 class="text-4xl text-white">Please Deposit</h3>
+        <input id="depositInput" class="block w-4/5 text-xl p-2 rounded-md mt-5" type="text" placeholder="$ amount you want to deposit">
+        <button id="deposit-btn" class="bg-amber-600	hover:bg-amber-500 transition-all py-3 px-5 rounded-md text-white text-xl mt-5">Deposit</button>
+      </div>
+      <div class="bg-violet-300 pt-5 pb-5 pl-5 text-3xl rounded-md">
+        <h3 class="text-4xl text-white">Please Withdraw</h3>
+        <input id="withdrawInput" class="block w-4/5 text-xl p-2 rounded-md mt-5" type="text" placeholder="$ amount you want to withdraw">
+        <button id="withdraw-btn" class="bg-amber-600	hover:bg-amber-500 transition-all py-3 px-5 rounded-md text-white text-xl mt-5">Withdraw</button>
+      </div>
+    </section>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+  </main>
+</body>
+</html>
